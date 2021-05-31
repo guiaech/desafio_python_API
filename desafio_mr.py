@@ -3,8 +3,8 @@ import time
 import json
 import requests
 
-x = 0
-while x <= 1:
+
+while x (True):
     cotacoes_bit = requests.get("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR")
     cotacoes_bit = cotacoes_bit.json()
     cotacao_dolar = cotacoes_bit["USD"]
