@@ -21,4 +21,7 @@ while x (True):
     print(f"Valor da cotação do LTCUSD é :${cotacaoltc_dolar}")
 
     time.sleep(30)
-    os.system('clear')
+        if os.name == "nt":
+        os.system('cls')
+    else:
+        os.system('clear')
